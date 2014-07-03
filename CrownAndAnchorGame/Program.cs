@@ -16,6 +16,11 @@ namespace CrownAndAnchorGame
             {
                 Console.WriteLine("d1 rolled = {0}",d1.roll());
             }
+            Console.WriteLine("\n\n");
+
+            Player p = new Player("Fred", 100);
+            Console.WriteLine("{0}\n\n",p);
+
             Console.ReadLine();
         }
     }
