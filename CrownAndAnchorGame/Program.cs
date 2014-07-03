@@ -21,6 +21,10 @@ namespace CrownAndAnchorGame
             Player p = new Player("Fred", 100);
             Console.WriteLine("{0}\n\n",p);
 
+            Game g = new Game(new Dice(), new Dice(), new Dice());
+            Console.WriteLine("Game : current dice values : {0} {1} {2}", 
+                g.CurrentDiceValues[0], g.CurrentDiceValues[1], g.CurrentDiceValues[2]);
+
             Console.ReadLine();
         }
     }
