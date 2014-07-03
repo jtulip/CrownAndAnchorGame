@@ -10,6 +10,13 @@ namespace CrownAndAnchorGame
     {
         static void Main(string[] args)
         {
+            Dice d1 = new Dice();
+            Console.WriteLine("d1 currentValue = {0} {1}", d1.CurrentValue, d1.CurrentValueRepr);
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine("d1 rolled = {0}",d1.roll());
+            }
+            Console.ReadLine();
         }
     }
 }
