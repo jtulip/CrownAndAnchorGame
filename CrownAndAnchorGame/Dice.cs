@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace CrownAndAnchorGame
 {
-    enum DiceValue
+    public enum DiceValue
     {
         CROWN, ANCHOR, HEART, DIAMOND, CLUB, SPADE
     }
 
-    class Dice
+    public class Dice
     {
         private static readonly Random RANDOM = new Random();
-        private static readonly Array VALUES = Enum.GetValues(typeof(DiceValue));
+        public static readonly Array VALUES = Enum.GetValues(typeof(DiceValue));
 
         private static readonly Dictionary<DiceValue, string> VALUE_REPR_MAP =
             new Dictionary<DiceValue, string>() { 
